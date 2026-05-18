@@ -1,26 +1,97 @@
-# ACMP: Agentic Code Modernization Pipeline
+# ACMP — Agentic Code Modernization Pipeline
 
-ACMP is a sophisticated AI-driven tool that automates the tedious process of upgrading legacy source code. Unlike simple LLM wrappers, ACMP employs a **multi-agent orchestration** strategy to ensure code is not just rewritten, but audited, tested, and optimized.
+ACMP is an AI-powered platform that modernizes legacy codebases using a multi-agent workflow.
 
+Instead of simply rewriting code with a single AI prompt, ACMP uses multiple specialized agents that analyze, rewrite, test, and optimize code automatically.
 
+---
 
-## The Agentic Workflow
-The system consists of four specialized agents working in a stateful loop:
+# Features
 
-1.  **Auditor Agent**: Analyzes legacy code for bugs, security risks, and technical debt.
-2.  **Engineer Agent**: Performs the heavy lifting by rewriting the code using modern standards.
-3.  **Tester Agent**: Executes the modernized code against virtual test cases to ensure functional parity.
-4.  **Optimizer Agent**: Refines the code further if the Tester finds errors or if performance can be improved.
+- Multi-agent AI workflow
+- Legacy code modernization
+- Automatic code auditing
+- AI-powered code rewriting
+- Functional testing pipeline
+- Code optimization system
+- FastAPI backend
+- React + Tailwind frontend
+- LangGraph orchestration
+- Groq LLM integration
+- Cost-efficient execution flow
 
-### Cost-Efficient "Early Exit"
-To maximize efficiency and minimize API costs, the pipeline implements a smart exit strategy:
-* **Instant Success**: If the Tester Agent reports zero errors, the pipeline finishes immediately.
-* **Safe Timeout**: If code execution times out (preventing infinite loops), the system accepts it as a success state rather than retrying indefinitely, allowing the user to review the output.
+---
 
-## Tech Stack
-* **Backend**: FastAPI, LangGraph, Python 3.10+
-* **Frontend**: React.js, Tailwind CSS, Lucide Icons, Vite
-* **AI Models**: Groq
+# Agent Workflow
 
+## 1. Auditor Agent
+Analyzes legacy code for:
+- Bugs
+- Security vulnerabilities
+- Deprecated patterns
+- Technical debt
 
-Create a new .env file with the API keys to run the project
+## 2. Engineer Agent
+Modernizes the code using:
+- Latest standards
+- Better architecture
+- Improved readability
+- Cleaner implementations
+
+## 3. Tester Agent
+Runs validation tests to:
+- Verify functionality
+- Detect runtime errors
+- Ensure output consistency
+
+## 4. Optimizer Agent
+Improves:
+- Performance
+- Maintainability
+- Code quality
+
+---
+
+# Smart Early Exit System
+
+To reduce unnecessary API usage and improve speed:
+
+- If testing succeeds → pipeline stops instantly
+- If execution times out → pipeline safely exits
+- Prevents infinite retry loops
+- Saves API cost and execution time
+
+---
+
+# Tech Stack
+
+## Backend
+- FastAPI
+- Python 3.10+
+- LangGraph
+
+## Frontend
+- React.js
+- Tailwind CSS
+- Vite
+- Lucide Icons
+
+## AI Models
+- Groq API
+
+---
+
+# Project Structure
+
+```bash
+ACMP/
+│
+├── backend/
+├── frontend/
+├── agents/
+├── workflows/
+├── tests/
+├── outputs/
+├── .env
+├── requirements.txt
+└── README.md
