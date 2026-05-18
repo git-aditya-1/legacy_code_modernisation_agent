@@ -82,6 +82,13 @@ To reduce unnecessary API usage and improve speed:
 ---
 
 # Project Structure
+Inspired by open-source modernization workflows, extended with:
+- multi-agent orchestration
+- LangGraph workflow
+- AI testing loop
+- optimizer agent
+- modern frontend
+- Groq integration
 
 ```bash
 ACMP/
